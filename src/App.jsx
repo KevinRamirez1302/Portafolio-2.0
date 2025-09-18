@@ -1,9 +1,10 @@
 import { ToggleDarkMode } from "./darkmode/toggleDarkMode";
+import pixelart from "/pixelart.png";
 
 function App() {
   return (
     <>
-      <section className="w-full dark:bg-gray-900 dark:text-white  flex justify-center px-4 sm:px-8 lg:px-16">
+      <section className="w-full dark:bg-gray-900 transition-colors duration-500 dark:text-white   flex justify-center px-4 sm:px-8 lg:px-16">
         <section className="flex flex-col justify-center py-10 w-full md:w-2/5">
           <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
             <div className="text-center sm:text-left">
@@ -15,11 +16,7 @@ function App() {
                   src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png"
                   alt="LinkedIn"
                 />
-                <img
-                  className="w-8 sm:w-10"
-                  src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png"
-                  alt="LinkedIn"
-                />
+                <img className="w-8 sm:w-10" src="" alt="LinkedIn" />
                 <img
                   className="w-8 sm:w-10"
                   src="https://static.vecteezy.com/system/resources/previews/018/930/587/original/linkedin-logo-linkedin-icon-transparent-free-png.png"
@@ -33,8 +30,8 @@ function App() {
               </div>
             </div>
             <img
-              className="w-24 sm:w-28 rounded-full"
-              src="https://img.freepik.com/vector-premium/perfil-avatar-hombre-icono-redondo_24640-14044.jpg?w=360"
+              className="w-24 h-25 sm:w-28 rounded-full"
+              src={pixelart}
               alt="Perfil"
             />
             <ToggleDarkMode />
