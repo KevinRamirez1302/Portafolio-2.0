@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { containerVariants } from '../../animaciones/animaciones';
-import { listItemVariants } from '../../animaciones/animaciones';
+import { containerVariants } from '../animaciones/animaciones.jsx';
+import { listItemVariants } from '..//animaciones/animaciones';
 import linkedin from '/linkedin.png';
 import github from '/github.png';
 

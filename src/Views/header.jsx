@@ -1,11 +1,11 @@
 import { motion } from 'framer-motion';
-import { headerVariants } from '../../animaciones/animaciones';
-import { ToggleDarkMode } from '../../darkmode/toggleDarkMode';
+import { headerVariants } from '../animaciones/animaciones';
+import { ToggleDarkMode } from '../darkmode/toggleDarkMode';
 import pixelart from '/pixelart.png';
 import curriculum from '/curriculum.png';
 import linkedin from '/linkedin.png';
 import github from '/github.png';
-import { containerVariants } from '../../animaciones/animaciones';
+import { containerVariants } from '../animaciones/animaciones';
 
 export const Header = () => {
   return (

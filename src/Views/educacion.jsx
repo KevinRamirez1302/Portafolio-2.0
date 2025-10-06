@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
-import { containerVariants } from '../../animaciones/animaciones';
-import { listItemVariants } from '../../animaciones/animaciones';
+import { containerVariants } from '../animaciones/animaciones';
+import { listItemVariants } from '../animaciones/animaciones';
 
 export const Educacion = () => {
   return (

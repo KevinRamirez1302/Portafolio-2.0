@@ -1,8 +1,8 @@
-import { Header } from './assets/Views/header';
-import { Skills } from './assets/Views/skills';
-import { Proyectos } from './assets/Views/proyectos';
-import { Educacion } from './assets/Views/educacion';
-import { Contactame } from './assets/Views/contactame';
+import { Header } from './Views/header';
+import { Skills } from './Views/skills';
+import { Proyectos } from './Views/proyectos';
+import { Educacion } from './Views/educacion';
+import { Contactame } from './Views/contactame';
 function App() {
   return (
     <>

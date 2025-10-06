@@ -3,9 +3,9 @@ import home from '/home.png';
 import productos from '/productos.png';
 import shopCar from '/shopCar.png';
 import github from '/github.png';
-import { containerVariants } from '../../animaciones/animaciones';
-import { listItemVariants } from '../../animaciones/animaciones';
-import { imageVariants } from '../../animaciones/animaciones';
+import { containerVariants } from '../animaciones/animaciones';
+import { listItemVariants } from '../animaciones/animaciones';
+import { imageVariants } from '../animaciones/animaciones';
 
 export const Proyectos = () => {
   return (
