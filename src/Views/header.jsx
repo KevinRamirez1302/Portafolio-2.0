@@ -11,7 +11,7 @@ export const Header = () => {
   return (
     <>
       <motion.div
-        className="flex flex-col sm:flex-row justify-between items-center gap-6 mb-8"
+        className="flex flex-col  sm:flex-row justify-between items-center gap-6 mb-8"
         variants={headerVariants}
         initial="hidden"
         animate="visible"
