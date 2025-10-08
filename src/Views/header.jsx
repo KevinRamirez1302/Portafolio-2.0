@@ -51,8 +51,8 @@ export const Header = () => {
                 <img className="w-10 h-10" src={github} alt="GitHub" />
               </motion.a>
               <motion.a
-                href="/cv2.pdf"
-                download="cv2.pdf"
+                href="/CVkev.pdf"
+                download="CVKEV.pdf"
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
               >
