@@ -1,22 +1,10 @@
 import { motion } from 'framer-motion';
-import React from 'react';
 import { headerVariants } from '../animaciones/animaciones';
 import { ToggleDarkMode } from '../darkmode/toggleDarkMode';
 import { containerVariants } from '../animaciones/animaciones';
 import { assets } from '../assets/assets';
 
 export const Header = () => {
-  React.useEffect(() => {
-    document.title = 'Kevin Ramirez - Desarrollador Full Stack | Portafolio';
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute(
-        'content',
-        'Portafolio de Kevin Ramirez, Desarrollador Full Stack especializado en React, Node.js y MongoDB. Experiencia en desarrollo web y aplicaciones multiplataforma.'
-      );
-    }
-  }, []);
-
   return (
     <>
       <motion.div
