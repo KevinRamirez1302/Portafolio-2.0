@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
-import home from '/home.png';
-import productos from '/productos.png';
-import shopCar from '/shopCar.png';
-import github from '/github.png';
 import { containerVariants } from '../animaciones/animaciones';
 import { listItemVariants } from '../animaciones/animaciones';
 import { imageVariants } from '../animaciones/animaciones';
+import { assets } from '../assets/assets';
 
 export const Proyectos = () => {
   return (
@@ -76,7 +73,7 @@ export const Proyectos = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img src={github} alt="GitHub" className="w-6 h-6" />
+              <img src={assets.github} alt="GitHub" className="w-6 h-6" />
               <span className="font-medium">Ver código</span>
             </motion.a>
             <motion.a
@@ -92,7 +89,7 @@ export const Proyectos = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-4">
-            {[home, productos, shopCar].map((img, i) => (
+            {[assets.home, assets.productos, assets.shopcar].map((img, i) => (
               <motion.img
                 key={i}
                 src={img}
@@ -171,7 +168,7 @@ export const Proyectos = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <img src={github} alt="GitHub" className="w-6 h-6" />
+              <img src={assets.github} alt="GitHub" className="w-6 h-6" />
               <span className="font-medium">Ver código</span>
             </motion.a>
             <motion.a

@@ -1,11 +1,8 @@
 import { motion } from 'framer-motion';
 import { headerVariants } from '../animaciones/animaciones';
 import { ToggleDarkMode } from '../darkmode/toggleDarkMode';
-import pixelart from '/pixelart.png';
-import curriculum from '/curriculum.png';
-import linkedin from '/linkedin.png';
-import github from '/github.png';
 import { containerVariants } from '../animaciones/animaciones';
+import { assets } from '../assets/assets';
 
 export const Header = () => {
   return (
@@ -16,10 +13,10 @@ export const Header = () => {
         initial="hidden"
         animate="visible"
       >
-        <div className="flex flex-col sm:flex-row gap-6 items-center">
+        <div className="flex flex-col sm:flex-row gap-10 items-center">
           <motion.img
             className="rounded-full w-28 h-28 object-cover shadow-lg ring-4 ring-blue-500/20"
-            src={pixelart}
+            src={assets.pixelart}
             alt="Perfil"
             whileHover={{ scale: 1.05, rotate: 5 }}
             transition={{ type: 'spring', stiffness: 300 }}
@@ -31,7 +28,7 @@ export const Header = () => {
             <p className="dark:text-gray-300 text-gray-600 text-lg font-medium mb-3">
               Full Stack Developer
             </p>
-            <div className="flex justify-center sm:justify-start gap-3 flex-wrap">
+            <div className="flex justify-center sm:justify-start gap-6 sm:gap-8 flex-wrap">
               <motion.a
                 href="https://www.linkedin.com/in/kevinramirezdev/"
                 target="_blank"
@@ -39,7 +36,11 @@ export const Header = () => {
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img className="w-10 h-10" src={linkedin} alt="LinkedIn" />
+                <img
+                  className="w-10 h-10"
+                  src={assets.linkedin}
+                  alt="LinkedIn"
+                />
               </motion.a>
               <motion.a
                 href="https://github.com/KevinRamirez1302"
@@ -48,7 +49,7 @@ export const Header = () => {
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img className="w-10 h-10" src={github} alt="GitHub" />
+                <img className="w-10 h-10" src={assets.github} alt="GitHub" />
               </motion.a>
               <motion.a
                 href="/CVkev.pdf"
@@ -56,7 +57,7 @@ export const Header = () => {
                 whileHover={{ scale: 1.2, rotate: 5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img className="w-10 h-10" src={curriculum} alt="CV" />
+                <img className="w-10 h-10" src={assets.cv} alt="CV" />
               </motion.a>
             </div>
           </div>

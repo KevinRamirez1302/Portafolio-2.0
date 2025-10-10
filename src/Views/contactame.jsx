@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import { containerVariants } from '../animaciones/animaciones.jsx';
 import { listItemVariants } from '..//animaciones/animaciones';
-import linkedin from '/linkedin.png';
-import github from '/github.png';
+import { assets } from '../assets/assets.js';
 
 export const Contactame = () => {
   return (
@@ -52,7 +51,11 @@ export const Contactame = () => {
                   }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <img src={linkedin} alt="LinkedIn" className="w-6 h-6" />
+                  <img
+                    src={assets.linkedin}
+                    alt="LinkedIn"
+                    className="w-6 h-6"
+                  />
                   <span className="font-medium">LinkedIn</span>
                 </motion.a>
                 <motion.a
@@ -70,7 +73,7 @@ export const Contactame = () => {
                   }}
                   whileTap={{ scale: 0.95 }}
                 >
-                  <img src={github} alt="GitHub" className="w-6 h-6" />
+                  <img src={assets.github} alt="GitHub" className="w-6 h-6" />
                   <span className="font-medium">GitHub</span>
                 </motion.a>
               </div>
