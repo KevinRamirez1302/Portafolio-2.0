@@ -1,10 +1,22 @@
 import { motion } from 'framer-motion';
+import React from 'react';
 import { headerVariants } from '../animaciones/animaciones';
 import { ToggleDarkMode } from '../darkmode/toggleDarkMode';
 import { containerVariants } from '../animaciones/animaciones';
 import { assets } from '../assets/assets';
 
 export const Header = () => {
+  React.useEffect(() => {
+    document.title = 'Kevin Ramirez - Desarrollador Full Stack | Portafolio';
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute(
+        'content',
+        'Portafolio de Kevin Ramirez, Desarrollador Full Stack especializado en React, Node.js y MongoDB. Experiencia en desarrollo web y aplicaciones multiplataforma.'
+      );
+    }
+  }, []);
+
   return (
     <>
       <motion.div
@@ -17,7 +29,11 @@ export const Header = () => {
           <motion.img
             className="rounded-full w-28 h-28 object-cover shadow-lg ring-4 ring-blue-500/20"
             src={assets.pixelart}
-            alt="Perfil"
+            alt="Kevin Ramirez - Desarrollador Full Stack"
+            title="Kevin Ramirez - Desarrollador Full Stack"
+            loading="eager"
+            width="112"
+            height="112"
             whileHover={{ scale: 1.05, rotate: 5 }}
             transition={{ type: 'spring', stiffness: 300 }}
           />
@@ -39,7 +55,11 @@ export const Header = () => {
                 <img
                   className="w-10 h-10"
                   src={assets.linkedin}
-                  alt="LinkedIn"
+                  alt="Perfil de LinkedIn de Kevin Ramirez"
+                  title="Conecta conmigo en LinkedIn"
+                  width="40"
+                  height="40"
+                  loading="lazy"
                 />
               </motion.a>
               <motion.a
@@ -49,7 +69,15 @@ export const Header = () => {
                 whileHover={{ scale: 1.2, rotate: -5 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <img className="w-10 h-10" src={assets.github} alt="GitHub" />
+                <img
+                  className="w-10 h-10"
+                  src={assets.github}
+                  alt="Perfil de GitHub de Kevin Ramirez"
+                  title="Ver mis proyectos en GitHub"
+                  width="40"
+                  height="40"
+                  loading="lazy"
+                />
               </motion.a>
               <motion.a
                 href="/CVkev.pdf"

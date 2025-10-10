@@ -95,11 +95,19 @@ export const Proyectos = () => {
                 src={img}
                 alt={
                   [
-                    'Página de inicio',
-                    'Página de productos',
-                    'Carrito de compras',
+                    'Vista previa de la página de inicio de SellAll',
+                    'Catálogo de productos de la tienda SellAll',
+                    'Funcionalidad del carrito de compras en SellAll',
                   ][i]
                 }
+                title={
+                  [
+                    'Página principal de SellAll - E-commerce',
+                    'Catálogo completo de productos SellAll',
+                    'Sistema de carrito de compras SellAll',
+                  ][i]
+                }
+                loading="lazy"
                 className="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow border-2 border-gray-200 dark:border-gray-700"
                 variants={imageVariants}
                 initial="hidden"
