@@ -91,7 +91,7 @@ export const Contactame = () => {
                 Correo Electrónico
               </h3>
               <motion.a
-                href="mailto:kevinramirez1302@gmail.com"
+                href="mailto:kevin.alexanderra1302@gmail.com"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-green-600 to-green-500 text-white rounded-xl hover:from-green-500 hover:to-green-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-0.5 backdrop-blur-sm border border-white/10 w-fit"
                 whileHover={{
                   scale: 1.05,
@@ -118,7 +118,7 @@ export const Contactame = () => {
                   />
                 </svg>
                 <span className="font-medium">
-                  kevin.alexander1302@gmail.com
+                  kevin.alexanderra1302@gmail.com
                 </span>
               </motion.a>
             </motion.div>
