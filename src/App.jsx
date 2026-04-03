@@ -21,8 +21,8 @@ const Contactame = lazy(() =>
 function App() {
   return (
     <>
-      <section className="font-roboto w-full min-h-screen dark:bg-gray-900 bg-[#F0F0F0] transition-colors duration-500 dark:text-white text-gray-900 flex justify-center px-4 sm:px-8 lg:px-16">
-        <section className="flex flex-col justify-center py-10 w-full max-w-4xl">
+      <section className="font-sans w-full min-h-screen dark:bg-zinc-950 bg-zinc-50 transition-colors duration-500 dark:text-zinc-100 text-zinc-900 flex justify-center px-4 sm:px-8 lg:px-16 selection:bg-zinc-300 dark:selection:bg-zinc-700">
+        <section className="flex flex-col justify-center py-16 w-full max-w-3xl">
           <Suspense>
             <Header />
           </Suspense>

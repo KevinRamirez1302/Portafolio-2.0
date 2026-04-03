@@ -6,18 +6,18 @@ export const Skills = () => {
   return (
     <>
       <motion.div
-        className="px-6 py-8 bg-white dark:bg-gray-800 rounded-xl shadow-md"
+        className="mb-16"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <h2 className="text-3xl font-bold mb-4 text-blue-600 dark:text-blue-400">
+        <h2 className="text-2xl font-medium mb-6 text-zinc-900 dark:text-zinc-100 tracking-tight">
           Habilidades Técnicas
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="dark:text-gray-300 text-gray-700">
-            <ul className="space-y-3 text-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="dark:text-zinc-400 text-zinc-600">
+            <ul className="space-y-4 text-lg font-light">
               {[
                 'React, Node.js, Express',
                 'MongoDB, Mongoose',
@@ -25,21 +25,21 @@ export const Skills = () => {
               ].map((skill, i) => (
                 <motion.li
                   key={i}
-                  className="flex items-start"
+                  className="flex items-center"
                   custom={i}
                   variants={listItemVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                 >
-                  <span className="text-blue-500 mr-3 text-xl">•</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
                   <span>{skill}</span>
                 </motion.li>
               ))}
             </ul>
           </div>
-          <div className="dark:text-gray-300 text-gray-700">
-            <ul className="space-y-3 text-lg">
+          <div className="dark:text-zinc-400 text-zinc-600">
+            <ul className="space-y-4 text-lg font-light">
               {[
                 'TailwindCSS',
                 'JWT, Bcrypt',
@@ -47,14 +47,14 @@ export const Skills = () => {
               ].map((skill, i) => (
                 <motion.li
                   key={i}
-                  className="flex items-start"
+                  className="flex items-center"
                   custom={i + 3}
                   variants={listItemVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                 >
-                  <span className="text-blue-500 mr-3 text-xl">•</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
                   <span>{skill}</span>
                 </motion.li>
               ))}
@@ -65,38 +65,38 @@ export const Skills = () => {
 
       {/* Soft Skills */}
       <motion.div
-        className="px-6 py-8 bg-white dark:bg-gray-800 rounded-xl shadow-md"
+        className="mb-16"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <h2 className="text-3xl font-bold mb-4 text-blue-600 dark:text-blue-400">
+        <h2 className="text-2xl font-medium mb-6 text-zinc-900 dark:text-zinc-100 tracking-tight">
           Habilidades Blandas
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div className="dark:text-gray-300 text-gray-700">
-            <ul className="space-y-3 text-lg">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="dark:text-zinc-400 text-zinc-600">
+            <ul className="space-y-4 text-lg font-light">
               {['Responsabilidad', 'Gestión de tiempo', 'Adaptabilidad'].map(
                 (skill, i) => (
                   <motion.li
                     key={i}
-                    className="flex items-start"
+                    className="flex items-center"
                     custom={i}
                     variants={listItemVariants}
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: true }}
                   >
-                    <span className="text-purple-500 mr-3 text-xl">•</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
                     <span>{skill}</span>
                   </motion.li>
                 )
               )}
             </ul>
           </div>
-          <div className="dark:text-gray-300 text-gray-700">
-            <ul className="space-y-3 text-lg">
+          <div className="dark:text-zinc-400 text-zinc-600">
+            <ul className="space-y-4 text-lg font-light">
               {[
                 'Comunicación',
                 'Curiosidad y aprendizaje continuo',
@@ -104,14 +104,14 @@ export const Skills = () => {
               ].map((skill, i) => (
                 <motion.li
                   key={i}
-                  className="flex items-start"
+                  className="flex items-center"
                   custom={i + 3}
                   variants={listItemVariants}
                   initial="hidden"
                   whileInView="visible"
                   viewport={{ once: true }}
                 >
-                  <span className="text-purple-500 mr-3 text-xl">•</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
                   <span>{skill}</span>
                 </motion.li>
               ))}
