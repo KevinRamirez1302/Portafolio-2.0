@@ -20,8 +20,12 @@ export const Skills = () => {
             <ul className="space-y-4 text-lg font-light">
               {[
                 'React, Node.js, Express',
+                'TypeScript',
+                'NestJS',
+                'Next.js',
+                'MySQL, PostgreSQL',
                 'MongoDB, Mongoose',
-                'JavaScript, HTML, CSS',
+                'RESTful APIs',
               ].map((skill, i) => (
                 <motion.li
                   key={i}
@@ -44,6 +48,10 @@ export const Skills = () => {
                 'TailwindCSS',
                 'JWT, Bcrypt',
                 'Java, Spring Boot (en aprendizaje)',
+                'JavaScript, HTML, CSS',
+                'Docker',
+                'Git, GitHub',
+                'Laravel, PHP',
               ].map((skill, i) => (
                 <motion.li
                   key={i}
@@ -91,7 +99,7 @@ export const Skills = () => {
                     <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
                     <span>{skill}</span>
                   </motion.li>
-                )
+                ),
               )}
             </ul>
           </div>

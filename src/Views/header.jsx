@@ -96,12 +96,13 @@ export const Header = () => {
           Sobre mí
         </h2>
         <p className="dark:text-zinc-400 text-zinc-600 leading-relaxed text-lg font-light">
-          Estudiante con un sólido conocimiento en el desarrollo web y en
-          tecnologías como React, Node.js y MongoDB. Con una gran capacidad de
-          autoaprendizaje, actualmente estoy ampliando mis habilidades con Java
-          y Spring Boot. Busco una oportunidad para aplicar mis conocimientos
-          teóricos y prácticos, contribuir a proyectos innovadores y
-          desarrollarme profesionalmente en un entorno dinámico.
+          Desarrollador Full Stack con mentalidad ágil y gran capacidad de
+          adaptación. Me especializo en construir aplicaciones robustas
+          utilizando tanto el ecosistema de JavaScript (React, NestJS) como
+          Laravel, optimizando los flujos de desarrollo y despliegue mediante la
+          contenedorización con Docker. Actualmente curso el Grado Superior en
+          DAM, mientras sigo expandiendo mis habilidades hacia entornos
+          empresariales con Java y Spring Boot.
         </p>
       </motion.div>
     </>
