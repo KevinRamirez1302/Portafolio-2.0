@@ -6,19 +6,20 @@ export const Educacion = () => {
   return (
     <>
       <motion.div
-        className="mb-16"
+        id="educacion"
+        className="mb-24"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <h2 className="text-2xl font-medium mb-8 text-zinc-900 dark:text-zinc-100 tracking-tight">
+        <h2 className="text-2xl font-semibold mb-8 text-ink-primary dark:text-ink-light tracking-tight">
           Educación
         </h2>
 
         <div className="space-y-8">
           <motion.div
-            className="flex flex-col sm:flex-row justify-between gap-4 pb-8 border-b border-zinc-200 dark:border-zinc-800"
+            className="flex flex-col sm:flex-row justify-between gap-4 pb-8 border-b border-border-whisper dark:border-border-dark"
             variants={listItemVariants}
             custom={0}
             initial="hidden"
@@ -26,21 +27,21 @@ export const Educacion = () => {
             viewport={{ once: true }}
           >
             <div className="flex-1">
-              <h3 className="font-medium text-lg mb-1 dark:text-zinc-200 text-zinc-800">
+              <h3 className="font-semibold text-lg mb-1 text-ink-primary dark:text-ink-light">
                 FP Grado Superior en Desarrollo de Aplicaciones Multiplataforma
                 (DAM)
               </h3>
-              <p className="dark:text-zinc-400 text-zinc-500 text-md font-light">
+              <p className="dark:text-ink-muted text-ink-secondary text-md font-light">
                 IES Villa de Mazo (La Palma)
               </p>
             </div>
-            <span className="text-zinc-500 dark:text-zinc-400 text-sm tracking-widest uppercase mt-1 sm:mt-0">
+            <span className="text-accent text-sm font-mono font-medium tracking-widest uppercase mt-1 sm:mt-0">
               En curso
             </span>
           </motion.div>
 
           <motion.div
-            className="flex flex-col sm:flex-row justify-between gap-4 pb-8 border-b border-zinc-200 dark:border-zinc-800"
+            className="flex flex-col sm:flex-row justify-between gap-4 pb-8 border-b border-border-whisper dark:border-border-dark"
             variants={listItemVariants}
             custom={1}
             initial="hidden"
@@ -48,14 +49,14 @@ export const Educacion = () => {
             viewport={{ once: true }}
           >
             <div className="flex-1">
-              <h3 className="font-medium text-lg mb-1 dark:text-zinc-200 text-zinc-800">
+              <h3 className="font-semibold text-lg mb-1 text-ink-primary dark:text-ink-light">
                 Desarrollador Front-End con React
               </h3>
-              <p className="dark:text-zinc-400 text-zinc-500 text-md font-light">
+              <p className="dark:text-ink-muted text-ink-secondary text-md font-light">
                 Alura LATAM con el programa Oracle Next Education
               </p>
             </div>
-            <span className="text-zinc-400 dark:text-zinc-500 text-sm mt-1 sm:mt-0">
+            <span className="dark:text-ink-muted text-ink-secondary text-sm font-mono mt-1 sm:mt-0">
               2023
             </span>
           </motion.div>
@@ -69,12 +70,12 @@ export const Educacion = () => {
             viewport={{ once: true }}
           >
             <div className="flex-1">
-              <h3 className="font-medium text-lg mb-1 dark:text-zinc-200 text-zinc-800">
+              <h3 className="font-semibold text-lg mb-1 text-ink-primary dark:text-ink-light">
                 Lógica de Programación
               </h3>
-              <p className="dark:text-zinc-400 text-zinc-500 text-md font-light">Cadif1</p>
+              <p className="dark:text-ink-muted text-ink-secondary text-md font-light">Cadif1</p>
             </div>
-            <span className="text-zinc-400 dark:text-zinc-500 text-sm mt-1 sm:mt-0">
+            <span className="dark:text-ink-muted text-ink-secondary text-sm font-mono mt-1 sm:mt-0">
               2018
             </span>
           </motion.div>

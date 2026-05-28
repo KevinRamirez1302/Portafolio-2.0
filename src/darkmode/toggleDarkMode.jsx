@@ -10,7 +10,7 @@ export const ToggleDarkMode = () => {
       whileHover={{ scale: 1.1, rotate: 15 }}
       whileTap={{ scale: 0.9 }}
       onClick={ToggleTheme}
-      className="relative flex items-center justify-center w-12 h-12 p-2 rounded-full shadow-md bg-gray-300 dark:bg-gray-800 transition-colors"
+      className="relative flex items-center justify-center w-12 h-12 p-2 rounded-full shadow-md bg-zinc-200 dark:bg-zinc-800 transition-colors"
     >
       <AnimatePresence mode="wait" initial={false}>
         <motion.div

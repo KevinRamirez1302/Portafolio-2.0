@@ -2,129 +2,149 @@ import { motion } from 'framer-motion';
 import { containerVariants } from '../animaciones/animaciones';
 import { listItemVariants } from '../animaciones/animaciones';
 
+const technicalSkills = {
+  frontend: ['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'TailwindCSS'],
+  backend: ['Node.js', 'Express', 'NestJS', 'Laravel', 'PHP', 'Java', 'Spring Boot'],
+  database: ['MySQL', 'PostgreSQL', 'MongoDB', 'Mongoose'],
+  tools: ['Docker', 'Git', 'GitHub', 'RESTful APIs', 'JWT', 'Bcrypt'],
+};
+
+const softSkills = [
+  'Responsabilidad',
+  'Gestión de tiempo',
+  'Adaptabilidad',
+  'Comunicación',
+  'Curiosidad y aprendizaje continuo',
+  'Pensamiento analítico',
+];
+
 export const Skills = () => {
   return (
     <>
       <motion.div
-        className="mb-16"
+        id="habilidades"
+        className="mb-24"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <h2 className="text-2xl font-medium mb-6 text-zinc-900 dark:text-zinc-100 tracking-tight">
+        <h2 className="text-2xl font-semibold mb-8 text-ink-primary dark:text-ink-light tracking-tight">
           Habilidades Técnicas
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="dark:text-zinc-400 text-zinc-600">
-            <ul className="space-y-4 text-lg font-light">
-              {[
-                'React, Node.js, Express',
-                'TypeScript',
-                'NestJS',
-                'Next.js',
-                'MySQL, PostgreSQL',
-                'MongoDB, Mongoose',
-                'RESTful APIs',
-              ].map((skill, i) => (
-                <motion.li
-                  key={i}
-                  className="flex items-center"
-                  custom={i}
-                  variants={listItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
-                  <span>{skill}</span>
-                </motion.li>
-              ))}
-            </ul>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-sm font-mono font-medium text-accent uppercase tracking-wider mb-3">
+                Frontend
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {technicalSkills.frontend.map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                    className="px-3 py-1.5 text-sm font-mono bg-accent-muted text-accent rounded-full border border-accent/20"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-mono font-medium text-accent uppercase tracking-wider mb-3">
+                Backend
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {technicalSkills.backend.map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                    className="px-3 py-1.5 text-sm font-mono bg-accent-muted text-accent rounded-full border border-accent/20"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
           </div>
-          <div className="dark:text-zinc-400 text-zinc-600">
-            <ul className="space-y-4 text-lg font-light">
-              {[
-                'TailwindCSS',
-                'JWT, Bcrypt',
-                'Java, Spring Boot (en aprendizaje)',
-                'JavaScript, HTML, CSS',
-                'Docker',
-                'Git, GitHub',
-                'Laravel, PHP',
-              ].map((skill, i) => (
-                <motion.li
-                  key={i}
-                  className="flex items-center"
-                  custom={i + 3}
-                  variants={listItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
-                  <span>{skill}</span>
-                </motion.li>
-              ))}
-            </ul>
+
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-sm font-mono font-medium text-accent uppercase tracking-wider mb-3">
+                Bases de Datos
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {technicalSkills.database.map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                    className="px-3 py-1.5 text-sm font-mono bg-accent-muted text-accent rounded-full border border-accent/20"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-sm font-mono font-medium text-accent uppercase tracking-wider mb-3">
+                Herramientas
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {technicalSkills.tools.map((skill, i) => (
+                  <motion.span
+                    key={i}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: i * 0.05 }}
+                    className="px-3 py-1.5 text-sm font-mono bg-accent-muted text-accent rounded-full border border-accent/20"
+                  >
+                    {skill}
+                  </motion.span>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </motion.div>
 
-      {/* Soft Skills */}
       <motion.div
-        className="mb-16"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <h2 className="text-2xl font-medium mb-6 text-zinc-900 dark:text-zinc-100 tracking-tight">
+        <h2 className="text-2xl font-semibold mb-8 text-ink-primary dark:text-ink-light tracking-tight">
           Habilidades Blandas
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="dark:text-zinc-400 text-zinc-600">
-            <ul className="space-y-4 text-lg font-light">
-              {['Responsabilidad', 'Gestión de tiempo', 'Adaptabilidad'].map(
-                (skill, i) => (
-                  <motion.li
-                    key={i}
-                    className="flex items-center"
-                    custom={i}
-                    variants={listItemVariants}
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: true }}
-                  >
-                    <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
-                    <span>{skill}</span>
-                  </motion.li>
-                ),
-              )}
-            </ul>
-          </div>
-          <div className="dark:text-zinc-400 text-zinc-600">
-            <ul className="space-y-4 text-lg font-light">
-              {[
-                'Comunicación',
-                'Curiosidad y aprendizaje continuo',
-                'Pensamiento analítico',
-              ].map((skill, i) => (
-                <motion.li
-                  key={i}
-                  className="flex items-center"
-                  custom={i + 3}
-                  variants={listItemVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
-                >
-                  <span className="w-1.5 h-1.5 rounded-full bg-zinc-300 dark:bg-zinc-700 mr-4"></span>
-                  <span>{skill}</span>
-                </motion.li>
-              ))}
-            </ul>
-          </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {softSkills.map((skill, i) => (
+            <motion.div
+              key={i}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: i * 0.08 }}
+              className="flex items-center gap-3 p-4 rounded-xl bg-white dark:bg-zinc-900 border border-border-whisper dark:border-border-dark"
+            >
+              <span className="w-2 h-2 rounded-full bg-accent"></span>
+              <span className="text-ink-secondary dark:text-ink-muted font-light">
+                {skill}
+              </span>
+            </motion.div>
+          ))}
         </div>
       </motion.div>
     </>

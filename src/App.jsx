@@ -3,6 +3,9 @@ import { lazy, Suspense } from 'react';
 const Header = lazy(() =>
   import('./Views/header').then((module) => ({ default: module.Header }))
 );
+const Navigation = lazy(() =>
+  import('./Views/Navigation').then((module) => ({ default: module.Navigation }))
+);
 const Skills = lazy(() =>
   import('./Views/skills').then((module) => ({ default: module.Skills }))
 );
@@ -21,13 +24,14 @@ const Contactame = lazy(() =>
 function App() {
   return (
     <>
-      <section className="font-sans w-full min-h-screen dark:bg-zinc-950 bg-zinc-50 transition-colors duration-500 dark:text-zinc-100 text-zinc-900 flex justify-center px-4 sm:px-8 lg:px-16 selection:bg-zinc-300 dark:selection:bg-zinc-700">
-        <section className="flex flex-col justify-center py-16 w-full max-w-3xl">
+      <Navigation />
+      <section className="font-sans w-full min-h-screen dark:bg-zinc-950 bg-canvas-light transition-colors duration-500 dark:text-zinc-100 text-zinc-900 flex justify-center px-4 sm:px-8 lg:px-16 selection:bg-zinc-300 dark:selection:bg-zinc-700">
+        <section className="flex flex-col justify-center py-16 w-full max-w-5xl">
           <Suspense>
             <Header />
           </Suspense>
 
-          <div className="space-y-6">
+          <div className="space-y-24">
             <Suspense>
               <Skills />
             </Suspense>

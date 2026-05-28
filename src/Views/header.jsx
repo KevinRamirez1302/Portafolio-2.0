@@ -1,6 +1,5 @@
 import { motion } from 'framer-motion';
 import { headerVariants } from '../animaciones/animaciones';
-import { ToggleDarkMode } from '../darkmode/toggleDarkMode';
 import { containerVariants } from '../animaciones/animaciones';
 import { assets } from '../assets/assets';
 
@@ -15,21 +14,21 @@ export const Header = () => {
       >
         <div className="flex flex-col sm:flex-row gap-8 items-center">
           <motion.img
-            className="rounded-full w-24 h-24 object-cover shadow-sm ring-1 ring-zinc-200 dark:ring-zinc-800"
+            className="rounded-full w-24 h-24 object-cover shadow-sm ring-2 ring-accent-muted"
             src={assets.pixelart}
             alt="Kevin Ramirez - Desarrollador Full Stack"
             title="Kevin Ramirez - Desarrollador Full Stack"
             loading="eager"
             width="112"
             height="112"
-            whileHover={{ scale: 1.02, y: -2 }}
+            whileHover={{ scale: 1.05, y: -2 }}
             transition={{ type: 'tween', duration: 0.3 }}
           />
           <div className="text-center sm:text-left">
-            <h1 className="text-4xl font-bold mb-1 tracking-tight text-zinc-900 dark:text-zinc-50">
+            <h1 className="text-4xl font-bold mb-1 tracking-tight text-ink-primary dark:text-ink-light">
               Kevin Ramirez
             </h1>
-            <p className="dark:text-zinc-400 text-zinc-500 text-lg mb-4 tracking-wide font-light">
+            <p className="dark:text-ink-muted text-ink-secondary text-lg mb-4 tracking-wide font-light">
               Full Stack Developer
             </p>
             <div className="flex justify-center sm:justify-start gap-5 flex-wrap">
@@ -81,21 +80,19 @@ export const Header = () => {
             </div>
           </div>
         </div>
-        <div className="self-end sm:self-auto">
-          <ToggleDarkMode />
-        </div>
       </motion.div>
       <motion.div
-        className="mb-16"
+        id="sobre-mi"
+        className="mb-24"
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
-        <h2 className="text-2xl font-medium mb-4 text-zinc-900 dark:text-zinc-100 tracking-tight">
+        <h2 className="text-2xl font-semibold mb-4 text-ink-primary dark:text-ink-light tracking-tight">
           Sobre mí
         </h2>
-        <p className="dark:text-zinc-400 text-zinc-600 leading-relaxed text-lg font-light">
+        <p className="dark:text-ink-muted text-ink-secondary leading-relaxed text-lg font-light">
           Desarrollador Full Stack con mentalidad ágil y gran capacidad de
           adaptación. Me especializo en construir aplicaciones robustas
           utilizando tanto el ecosistema de JavaScript (React, NestJS) como
